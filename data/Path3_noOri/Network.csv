@@ -1,0 +1,7 @@
+time,seconds_elapsed,type,isConnected,isInternetReachable,isWifiEnabled,isConnectionExpensive,ssid,bssid,strength,ipAddress,frequency,cellularGeneration,carrier
+1732873768810000000,2.015999755859375,wifi,true,true,,false,Smart-CAU_2.4G,b4:5d:50:a0:78:93,,10.210.98.77,,,
+1732873770823000000,4.029,wifi,true,true,,false,Smart-CAU_2.4G,b4:5d:50:a0:78:93,,10.210.98.77,,,
+1732873772837000000,6.043,wifi,true,true,,false,Smart-CAU_2.4G,b4:5d:50:a0:78:93,,10.210.98.77,,,
+1732873774850000000,8.055999755859375,wifi,true,true,,false,Smart-CAU_2.4G,b4:5d:50:a0:78:93,,10.210.98.77,,,
+1732873776864000000,10.07,wifi,true,true,,false,Smart-CAU_2.4G,b4:5d:50:a0:78:93,,10.210.98.77,,,
+1732873778878000000,12.084000244140626,wifi,true,true,,false,Smart-CAU_2.4G,b4:5d:50:a0:78:93,,10.210.98.77,,,

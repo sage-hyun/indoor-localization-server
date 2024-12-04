@@ -1,0 +1,2 @@
+time,seconds_elapsed,type,isConnected,isInternetReachable,isWifiEnabled,isConnectionExpensive,ssid,bssid,strength,ipAddress,frequency,cellularGeneration,carrier
+1733237827893000000,2.009,none,false,false,true,,,,,,,,
