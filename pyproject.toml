@@ -12,7 +12,13 @@ scipy = "^1.14.1"
 matplotlib = "^3.9.2"
 pandas = "^2.2.3"
 opencv-python = "^4.10.0.84"
+fastdtw = "^0.3.4"
+dtaidistance = "^2.3.12"
+filterpy = "^1.4.5"
 
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
 
 [build-system]
 requires = ["poetry-core"]
