@@ -76,6 +76,9 @@ def detect_steps(acceleration: np.ndarray, acceleration_threshold: float, freque
     acceleration = filter_acceleration(acceleration, frequency=frequency, **kwargs)
     zero_crossing = np.where((acceleration[:-1] * acceleration[1:]) < 0)[0]
 
+    if len(zero_crossing) <= 0:
+        return np.empty(0), np.empty(0), np.empty(0), np.empty(0)
+
     # delete the first index element if the wave is negative to ensure the acceleration goes positive then negative
     if acceleration[zero_crossing[0]] > 0 and acceleration[zero_crossing[0] + 1] < 0:
         zero_crossing = zero_crossing[1:]
