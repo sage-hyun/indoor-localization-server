@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-
+import typing
 # Function to integrate the gyroscope readings (angular velocity) over time to estimate the heading change (turning angle)
 # def estimate_turning_angle(gyro_data: pd.DataFrame, frequency):
 #     """
@@ -24,14 +24,14 @@ import numpy as np
 #     return total_angle
 
 
-def estimate_turning_angle(gyro_data: np.ndarray, frequency):
+def estimate_turning_angle(gyro_data: np.ndarray, frequency) -> float:
     """
     Estimates the turning angle using gyroscope data.
     """
     total_angle = 0.0  # Initialize total turning angle
     dt = 1.0 / frequency
 
-    total_angle += sum(gyro_data[:,2]) * dt  # Integrate Z-axis angular velocity (yaw)
+    total_angle += np.sum(gyro_data[:,2]) * dt  # Integrate Z-axis angular velocity (yaw)
 
     return total_angle
 

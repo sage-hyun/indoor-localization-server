@@ -3,7 +3,7 @@ from typing import Tuple, Union
 import numpy as np
 from scipy import signal
 
-def filter_acceleration(acceleration: np.ndarray, frequency: float = 100, **kwargs) -> (np.ndarray, np.ndarray):
+def filter_acceleration(acceleration: np.ndarray, frequency: float = 100, **kwargs) -> Tuple[np.ndarray, np.ndarray]:
     """
     This function filters then normalises and centers around 0 the input 3D acceleration
 
@@ -102,10 +102,10 @@ def detect_steps(acceleration: np.ndarray, acceleration_threshold: float, freque
     indices = np.where(acceleration[valleys] < -acceleration_threshold)[0]
     valleys = valleys[indices]
 
-    if len(peaks) == 0:
-        print("Warning: no acceleration peaks found during sequence")
-    if len(valleys) == 0:
-        print("Warning: no acceleration valleys found during sequence")
+    # if len(peaks) == 0:
+    #     print("Warning: no acceleration peaks found during sequence")
+    # if len(valleys) == 0:
+    #     print("Warning: no acceleration valleys found during sequence")
 
     return acceleration, zero_crossing, peaks, valleys
 

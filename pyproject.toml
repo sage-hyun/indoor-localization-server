@@ -15,6 +15,9 @@ opencv-python = "^4.10.0.84"
 fastdtw = "^0.3.4"
 dtaidistance = "^2.3.12"
 filterpy = "^1.4.5"
+paho-mqtt = "^2.1.0"
+flask = "^3.1.0"
+ahrs = "^0.3.1"
 
 
 [tool.poetry.group.dev.dependencies]
